@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="Encrypter">
+            <header class="alura">
+                <section>
+                    <img src="assets/img/Logo.png">
+                </section>
+                <section><h1>Encripter for Message</h1></section>
+            </header>
+            <main class="container_main">
+                <section class="text1">
+                    <div class="inputText">
+                        <input type="text" id="text" placeholder="Ingrese el texto aqui" name="accion" checked>
+                    </div>
+                    <div class="buttons">
+                        <button id="buttonEncrypt">Encriptar!</button>
+                        <button id="buttonDecrypt">Desencriptar</button>
+                    </div>
+                </section>
+
+                <aside class="container_right">
+                    <div class="areatext">
+                        <div>
+                            <input type="text" id="result">
+                        </div>
+                        <div class="right">
+                            <img src="assets/img/Muñeco.png" class="muñeco" id="muñeco1">
+                            <h3 id="mensaje">Ningun mensaje fue encontrado</h3>
+                            <p id="parrafo">Ingresa el texto que desees encriptar o desencriptar</p>
+                            <button id="buttonCopy">Copiar</button>
+                        </div>
+                    </div>  
+                </aside>
+            </main>
+            <footer>
+
+            </footer>
+        </div>
+    </div>
+<script src="main.js"></script>
+</body>
+</html>
