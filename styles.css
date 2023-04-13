@@ -169,7 +169,6 @@ footer{
 
 @media screen and (max-width: 620px) {
     body {
-        width: 400px;
         background-repeat: no-repeat;
         background-position: center center;
         background-attachment: fixed;
