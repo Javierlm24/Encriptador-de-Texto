@@ -169,8 +169,7 @@ footer{
 
 @media screen and (max-width: 620px) {
     body {
-        width: 620px;
-        height: 100%;
+        width: 400px;
         background-repeat: no-repeat;
         background-position: center center;
         background-attachment: fixed;
@@ -201,7 +200,7 @@ footer{
 
     .inputText #text {
         margin: 50px 0 80px;
-        width: 100%;
+        width: 70%;
         align-items: center;
         text-align: center;
     }
