@@ -170,16 +170,20 @@ footer{
 @media screen and (max-width: 620px) {
     body {
         width: 620px;
+        height: 100%;
         background-repeat: no-repeat;
         background-position: center center;
         background-attachment: fixed;
     }
 
     .container {
-        padding: 20px;
         width: 100%;
-        max-width: 370px;
+        max-width: 570px;
         margin: 0 auto;
+    }
+
+    .Encrypter{
+        height: 900px;
     }
 
     .container_main {
@@ -197,7 +201,7 @@ footer{
 
     .inputText #text {
         margin: 50px 0 80px;
-        width: 50%;
+        width: 100%;
         align-items: center;
         text-align: center;
     }
@@ -209,7 +213,7 @@ footer{
         justify-content: center;    /* Centrado horizontal */
         align-items: center; /* Centrado vertical */
         align-content: center;
-        height: 150px;
+        height: 160px;
     }
 
     section div button:nth-child(1),
@@ -241,8 +245,8 @@ footer{
     .areatext {
         width: 100%;
         max-width: 400px;
-        height: 250px;
-        margin: 0 auto;
+        height: 230px;
+        margin: 30px auto;
     }
 
     .areatext #result {
@@ -253,5 +257,10 @@ footer{
 
     .muñeco {
         display: none;
+    }
+
+    footer{
+        height: 100px;
+        margin: 40px auto;
     }
 }
