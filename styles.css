@@ -175,7 +175,6 @@ footer h4{
 
 @media screen and (max-width: 620px) {
     body {
-        width: 620px;
         background-repeat: no-repeat;
         background-position: center center;
         background-attachment: fixed;
@@ -184,11 +183,11 @@ footer h4{
     .container {
         width: 100%;
         height: 100%;
-        margin: 20px 0 0 45px;
+        margin: 20px 0 0 5px;
     }
 
     .Encrypter{
-        height: 810px;
+        height: 825px;
     }
 
     .container_main {
@@ -264,7 +263,7 @@ footer h4{
     }
 
     footer{
-        height: 40px;
+        height: 55px;
         margin: auto;
     }
 
@@ -284,7 +283,7 @@ footer h4{
     .container {
         width: 100%;
         height: 100%;
-        margin: 20px 0 0 50px;
+        margin: 20px 0 0 5px;
     }
 
     .Encrypter{
