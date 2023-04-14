@@ -188,7 +188,7 @@ footer h4{
     }
 
     .Encrypter{
-        height: 800px;
+        height: 810px;
     }
 
     .container_main {
@@ -264,7 +264,7 @@ footer h4{
     }
 
     footer{
-        height: 30px;
+        height: 40px;
         margin: auto;
     }
 
@@ -274,7 +274,7 @@ footer h4{
 }
 
 
-@media screen and (max-width: 1020px) {
+@media screen and (min-width: 621px) and  (max-width: 1020px) {
     body {
         background-repeat: no-repeat;
         background-position: center center;
