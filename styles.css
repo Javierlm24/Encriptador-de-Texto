@@ -172,6 +172,13 @@ footer h4{
     margin-top: 0;
 }
 
+.lupa{
+    width: 100px;
+    height: 100px;
+    display: none;
+    margin: 40px auto;
+}
+
 
 @media screen and (max-width: 620px) {
     body {
@@ -271,6 +278,7 @@ footer h4{
     footer h4{
         margin-top: 0;
     }
+
 }
 
 
