@@ -182,19 +182,20 @@ footer h4{
 
 @media screen and (max-width: 620px) {
     body {
+        width: 100%;
         background-position: center center;
         background-attachment: fixed;
     }
 
     .container {
-        width: 100%;
+        width: 400px;
         height: 100%;
-        margin: 0px 0px 0px 0px;
+        margin: 0px 0px 0px 45px;
     }
 
     .Encrypter{
         height: 825px;
-        width: 100%;
+        width: 400px;
     }
 
     .container_main {
@@ -211,7 +212,7 @@ footer h4{
 
     .inputText #text {
         margin: 50px 0 80px;
-        width: 60%;
+        width: 400px;
         align-items: center;
         text-align: center;
     }
@@ -228,7 +229,7 @@ footer h4{
 
     section div button:nth-child(1),
     section div button:nth-child(2) {
-        width: 303px;
+        width: 300px;
         max-width: 300px;
         margin-bottom: 10px;
         height: 67px;
