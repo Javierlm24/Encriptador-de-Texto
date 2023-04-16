@@ -33,9 +33,11 @@ buttonEncrypt.addEventListener('click', () => {
         document.getElementById('mensaje').style.display = "none";
         document.getElementById('parrafo').style.display = "none";
         buttonCopy.style.display = "block";
-      }
-    } else {
 
+      }
+      } else if(result.value){
+        swal.fire("¡Aviso!","No se encontro texto para Encriptar");
+      } else {
       document.getElementById('muñeco1').style.display = "none";
       document.getElementById('lupa1').style.display = "block";
       console.log("Mensaje no encontrado");
@@ -44,11 +46,14 @@ buttonEncrypt.addEventListener('click', () => {
 
 buttonDescrypt.addEventListener('click', () => {
     let text = document.getElementById('text');
+    let result = document.getElementById('result');
     if(text.value){
       let descryptText = desencriptarTexto(text.value.toLowerCase());
       document.getElementById('result').value = descryptText;
       text.value = "";
-    }else{
+    }else if(result.value){
+      swal.fire("¡Aviso!","Si desea Desencriptar Copie y Pegue el mensaje en el Area de Texto");
+    }else {
       document.getElementById('muñeco1').style.display = "none";
       document.getElementById('lupa1').style.display = "block";
       console.log("Mensaje no encontrado");
