@@ -2,18 +2,19 @@ const buttonEncrypt = document.getElementById("buttonEncrypt");
 const buttonDescrypt = document.getElementById("buttonDecrypt");
 const buttonCopy = document.getElementById("buttonCopy");
 
+
 buttonEncrypt.addEventListener('click', () => {
     let text = document.getElementById('text');
     if(text.value){
-      let encryptText = encriptarTexto(text.value);
+      let encryptText = encriptarTexto(text.value.toLowerCase());
       document.getElementById('result').value = encryptText;
 
-    buttonCopy.disabled = false;
-    document.getElementById('result').style.display = "block";
-    document.getElementById('muñeco1').style.display = "none";
-    document.getElementById('mensaje').style.display = "none";
-    document.getElementById('parrafo').style.display = "none";
-    buttonCopy.style.display = "block";
+      buttonCopy.disabled = false;
+      document.getElementById('result').style.display = "block";
+      document.getElementById('muñeco1').style.display = "none";
+      document.getElementById('mensaje').style.display = "none";
+      document.getElementById('parrafo').style.display = "none";
+      buttonCopy.style.display = "block";
     } else {
 
       document.getElementById('muñeco1').style.display = "none";
@@ -24,16 +25,15 @@ buttonEncrypt.addEventListener('click', () => {
 })
 
 buttonDescrypt.addEventListener('click', () => {
-    const text = document.getElementById('text');
+    let text = document.getElementById('text');
     if(text.value){
-      const descryptText = desencriptarTexto(text.value);
+      let descryptText = desencriptarTexto(text.value.toLowerCase());
       document.getElementById('result').value = descryptText;
     }else{
       document.getElementById('muñeco1').style.display = "none";
       document.getElementById('lupa1').style.display = "block";
       console.log("Mensaje no encontrado");
     }
-    
 
 })
 
