@@ -2,6 +2,7 @@ const buttonEncrypt = document.getElementById("buttonEncrypt");
 const buttonDescrypt = document.getElementById("buttonDecrypt");
 const buttonCopy = document.getElementById("buttonCopy");
 
+
 buttonEncrypt.addEventListener('click', () => {
     let text = document.getElementById('text');
     if(text.value){
