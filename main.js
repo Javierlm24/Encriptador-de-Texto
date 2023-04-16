@@ -5,23 +5,41 @@ const buttonCopy = document.getElementById("buttonCopy");
 
 buttonEncrypt.addEventListener('click', () => {
     let text = document.getElementById('text');
+    let expRegular = /.*[A-Z].*/;
     if(text.value){
-      let encryptText = encriptarTexto(text.value.toLowerCase());
-      document.getElementById('result').value = encryptText;
+      if (/\d/.test((text.value.trim()))){
+        swal.fire("Lo siento", "No se permiten numeros");
+        text.value = "";
+      } else if(expRegular.test(text.value)){
+        swal.fire("Se encontro una letra Mayuscula, por lo que el dato final se transformara a minusculas")
+        let encryptText = encriptarTexto(text.value.toLowerCase());
+        document.getElementById('result').value = encryptText;
+        text.value = "";
 
-      buttonCopy.disabled = false;
-      document.getElementById('result').style.display = "block";
-      document.getElementById('muñeco1').style.display = "none";
-      document.getElementById('mensaje').style.display = "none";
-      document.getElementById('parrafo').style.display = "none";
-      buttonCopy.style.display = "block";
+        buttonCopy.disabled = false;
+        document.getElementById('result').style.display = "block";
+        document.getElementById('muñeco1').style.display = "none";
+        document.getElementById('mensaje').style.display = "none";
+        document.getElementById('parrafo').style.display = "none";
+        buttonCopy.style.display = "block";
+      } else{
+        let encryptText = encriptarTexto(text.value.toLowerCase());
+        document.getElementById('result').value = encryptText;
+        text.value = "";
+
+        buttonCopy.disabled = false;
+        document.getElementById('result').style.display = "block";
+        document.getElementById('muñeco1').style.display = "none";
+        document.getElementById('mensaje').style.display = "none";
+        document.getElementById('parrafo').style.display = "none";
+        buttonCopy.style.display = "block";
+      }
     } else {
 
       document.getElementById('muñeco1').style.display = "none";
       document.getElementById('lupa1').style.display = "block";
       console.log("Mensaje no encontrado");
     }
-
 })
 
 buttonDescrypt.addEventListener('click', () => {
@@ -29,6 +47,7 @@ buttonDescrypt.addEventListener('click', () => {
     if(text.value){
       let descryptText = desencriptarTexto(text.value.toLowerCase());
       document.getElementById('result').value = descryptText;
+      text.value = "";
     }else{
       document.getElementById('muñeco1').style.display = "none";
       document.getElementById('lupa1').style.display = "block";
